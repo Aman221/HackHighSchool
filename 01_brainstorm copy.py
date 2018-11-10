@@ -35,7 +35,7 @@ response8 = raw_input(category + ':')
 anslist.append(response8)
 response9 = raw_input(category + ':')
 anslist.append(response9)
-print "Wh4t is your last item?"
+print "What is your last item?"
 response10 = raw_input(category + ':')
 anslist.append(response10)
 
