@@ -48,6 +48,6 @@ Overall_time = new_end-new_start
 
 for x in anslist:
 	print(x.center(80,' '))
-	print str(overall_time.center(80,' '))
+	print str(Overall_time.center(80,' '))
 
 
