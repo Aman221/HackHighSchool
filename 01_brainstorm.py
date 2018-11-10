@@ -22,33 +22,38 @@ start = time.time()
 new_start = int(start)
 
 
-response1 = raw_input(category + ':')
+response1 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response1)
-response2 = raw_input(category + ':')
+response2 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response2)
-response3 = raw_input(category + ':')
+response3 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response3)
-response4 = raw_input(category + ':')
+response4 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response4)
-response5 = raw_input(category + ':')
+response5 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response5)
-response6 = raw_input(category + ':')
+response6 = "|            " + raw_input(category + ':') + "             |"
 anslist.append(response6)
-response7 = raw_input(category + ':')
+response7 = "|            " + raw_input(category + ':') + "             |"
 anslist.append(response7)
-response8 = raw_input(category + ':')
+response8 = "|            " + raw_input(category + ':') + "             |"
 anslist.append(response8)
-response9 = raw_input(category + ':')
+response9 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response9)
 print "What is your last item?"
-response10 = raw_input(category + ':')
+response10 = "|            " +  raw_input(category + ':') + "             |"
 anslist.append(response10)
 end = time.time()
 new_end = int(end)
 Overall_time = new_end-new_start
 new_overall_time = str(Overall_time)
-
+box_top = "----------------------------"
+box_bottom = "----------------------------"
+box_fills = "|                            |"
+print(box_top.center(80,' '))
 for x in anslist:
-	print(x.center(100,' '))
-Elapsed_time =  "You took " + new_overall_time + " seconds"
+	print(x.center(80,' '))
+	print(box_fills.center(80,' '))
+Elapsed_time =  "|    You took " + new_overall_time + " seconds     |" 
 print(Elapsed_time.center(80,' '))
+print(box_bottom.center(80,' '))
