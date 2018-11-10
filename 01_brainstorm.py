@@ -17,8 +17,13 @@ anslist = []
 
 print "Your category is: " + category
 import time
+<<<<<<< HEAD
 overall_time = time.time()
 
+=======
+start = time.time()
+end = time.time()
+>>>>>>> 2bb98ba6597f3846db6a1651222148e53f211857
 response1 = raw_input(category + ':')
 anslist.append(response1)
 response2 = raw_input(category + ':')
@@ -40,8 +45,17 @@ anslist.append(response9)
 print "What is your last item?"
 response10 = raw_input(category + ':')
 anslist.append(response10)
+<<<<<<< HEAD
 
 
 for x in anslist:
 	print(x.center(80,' '))
 	print(overall_time.center(80,' '))
+=======
+Overall_time = end-start
+str(Overall_time)
+
+for x in anslist:
+	print(x.center(40, ' '))
+	print "You took " + Overall_time + "seconds."
+>>>>>>> 2bb98ba6597f3846db6a1651222148e53f211857
