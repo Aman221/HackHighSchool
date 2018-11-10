@@ -41,4 +41,4 @@ anslist.append(response10)
 
 
 for x in anslist:
-	print(x.center(40, ' '))
+	print(x.center(40,' '))
