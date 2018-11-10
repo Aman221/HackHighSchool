@@ -16,7 +16,9 @@ if cat_num == 3:
 anslist = []
 
 print "Your category is: " + category
-
+import time
+start = time.time()
+end = time.time()
 response1 = raw_input(category + ':')
 anslist.append(response1)
 response2 = raw_input(category + ':')
@@ -38,7 +40,9 @@ anslist.append(response9)
 print "What is your last item?"
 response10 = raw_input(category + ':')
 anslist.append(response10)
-
+Overall_time = end-start
+str(Overall_time)
 
 for x in anslist:
 	print(x.center(40, ' '))
+	print "You took " + Overall_time + "seconds."
