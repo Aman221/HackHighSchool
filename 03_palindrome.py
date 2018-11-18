@@ -5,6 +5,9 @@ print "What is thy name? For that will decide whether or not thou may enter thes
 palindrometest = raw_input('-')
 letters = ''.join(filter(str.isalpha, palindrometest))
 lower = letters.lower()
+print letters
+print lower
+print lower[::-1]
 if lower == lower[::-1]:
 	print "Welcome to Palindrome Palace, palindrome! Thou art welcome now and forevermore!"
 else:
