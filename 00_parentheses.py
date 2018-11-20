@@ -1,3 +1,4 @@
+#first part
 def everyother(s):
     ret = ""
     i = True
@@ -9,4 +10,15 @@ def everyother(s):
         if char != ' ':
             i = not i
     return ret
-print everyother(raw_input('Enter a phrase'))
+new_line = everyother(raw_input('Enter a phrase: '))
+print new_line
+
+#second part
+newer_line = new_line.replace('A', '*')
+brand_line = newer_line.replace('E', '*')
+brander_line = brand_line.replace('I', '*')
+brandest_line = brander_line.replace('O', '*')
+final_line = brandest_line.replace('U', '*')
+print final_line
+
+#third part
