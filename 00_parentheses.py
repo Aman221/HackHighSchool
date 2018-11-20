@@ -22,3 +22,9 @@ final_line = brandest_line.replace('U', '*')
 print final_line
 
 #third part
+open_par = final_line.count('(')
+close_par = final_line.count(')')
+if open_par == close_par:
+    print "Balanced? True"
+else:
+    print "Balanced? False"
