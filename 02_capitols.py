@@ -1,19 +1,17 @@
 while True:
-	import csv
 	user_input = raw_input('Ready: ')
-	fh = csv.reader(open("capitols.txt", "r"))
-	dictionary = {}	
-	for line in fh:
-		key, val = line
-		dictionary[key] = val
-		if user_input in dictionary.keys():
-			print val
+	f = open('capitols.txt', 'r')
+	dictionary = dict()
+	for line in f:
+		key, val = line.strip().split(',')
+		dictionary[key.strip()] = val.strip()
+		if user_input in dictionary.iterkeys():
+			print dictionary.get(None, val)
 			break
-		elif user_input in dictionary.values():
+		elif user_input in dictionary.itervalues():
 			print key
 			break
-		elif user_input ==  "Done":
+		elif user_input == "Done":
 			quit()
-		else:
-			print "nil"
-			break
+	else:
+		print "nil"
