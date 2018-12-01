@@ -54,5 +54,6 @@ print(box_top.center(80,' '))
 for x in anslist:
 	print(x.center(80,' '))
 	print(box_fills.center(80,' '))
-print(new_overall_time.center(80,' '))
+Elapsed_time =  "You took " + new_overall_time + " seconds" 
+print(Elapsed_time.center(80,' '))
 print(box_bottom.center(80,' '))
