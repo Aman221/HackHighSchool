@@ -31,16 +31,16 @@ def write_colorful_text(string, style, foreground_color, background_color):
 	if style in range(8):
 		if foreground_color in range(30,38):
 			if background_color in range(40,48):
+				global i
 				while i < len(string):
 					print "\033[" + str(style) + ";" + str(foreground_color) + ";" + str(background_color) + "m " + string[i] + " \n"
-					global i
 					i = i + 1
 					return
 
-write_colorful_text("RAINBOW", Blinking, Red, BG_White)
-write_colorful_text("RAINBOW", Blinking, Yellow, BG_White)
-write_colorful_text("RAINBOW", Blinking, Green, BG_White)
-write_colorful_text("RAINBOW", Blinking, Cyan, BG_White)
-write_colorful_text("RAINBOW", Blinking, Blue, BG_White)
-write_colorful_text("RAINBOW", Blinking, Purple, BG_White)
-write_colorful_text("RAINBOW", Blinking, Black, BG_White)
+write_colorful_text("RAINBOW", Bold, Red, BG_Black)
+write_colorful_text("RAINBOW", Bold, Yellow, BG_Black)
+write_colorful_text("RAINBOW", Bold, Green, BG_Black)
+write_colorful_text("RAINBOW", Bold, Cyan, BG_Black)
+write_colorful_text("RAINBOW", Bold, Blue, BG_Black)
+write_colorful_text("RAINBOW", Bold, Purple, BG_Black)
+write_colorful_text("RAINBOW", Bold, White, BG_Black)
