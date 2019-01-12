@@ -1,7 +1,6 @@
 import collections
 lok = []
 lov = []
-#open an input file of names and iterate through it.
 f = open('names.txt', 'r')
 dictionary = dict()
 for line in f.readlines():
@@ -14,6 +13,7 @@ for line in f.readlines():
 	b = "".join(a)
 	lov.append(b)
 c = collections.Counter(lok)
-d = [k for k, v in c.iteritems() if v > 1]
+lodf = [k for k, v in c.iteritems() if c.values().count(v) > 1]
 y = collections.Counter(lov)
-z = [k for k, v in y.iteritems() if v > 1]
+lodl = [k for k, v in y.iteritems() if y.keys().count(v) > 1]
+
