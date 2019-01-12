@@ -13,7 +13,7 @@ for line in f.readlines():
 	b = "".join(a)
 	lov.append(b)
 c = collections.Counter(lok)
-lodf = [k for k, v in c.iteritems() if c.values().count(v) > 1]
+d = [k for k, v in c.iteritems() if v > 1]
 y = collections.Counter(lov)
-lodl = [k for k, v in y.iteritems() if y.keys().count(v) > 1]
+z = [k for k, v in y.iteritems() if v > 1]
 
