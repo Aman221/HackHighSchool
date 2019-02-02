@@ -29,4 +29,3 @@ def state():
 		if len(x[1]) > 1:
 			print (x[0 ]+ "(" + str(len(x[1])) + "): ") + str(x[1])
 state()
-
