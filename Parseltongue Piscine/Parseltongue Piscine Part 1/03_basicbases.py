@@ -1,0 +1,5 @@
+number = raw_input('Enter a number: ')
+convnum = int(number, 10)
+print str(bin(convnum))
+print str(oct(convnum))
+print str(hex(convnum))
