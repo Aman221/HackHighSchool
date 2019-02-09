@@ -1,3 +1,10 @@
 class Player:
-	def Playbook(self):
-		
+	Playbook = ["Hail Mary", "Option Play"]
+
+class QB:
+	
+class RB:
+
+class WR:
+
+class Blocking:
