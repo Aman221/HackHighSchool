@@ -1,10 +1,10 @@
 class Player:
 	Playbook = ["Hail Mary", "Option Play"]
 
-class QB:
+class QB(Player):
+
+class RB(Player):
 	
-class RB:
+class WR(Player):
 
-class WR:
-
-class Blocking:
+class Blocking(Player):
