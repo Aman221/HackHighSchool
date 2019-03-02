@@ -1,17 +1,15 @@
 from building import Building
 
 class Campus:
-	def __init__ (self, buildings, num_buildings, capacity):
-		self.buildings = buildings
-		self.num_buildings = number_of_buildings
-		self.capacity = ccapacity
+	def __init__ (self):
+		self.building = []
+		self.num_buildings = 0
+		self.capacity = 0
 
-		def add_building():
-			buildings = []
-			number_of_buildings = len(buildings)
-			ccapacity = capacity
+	def add_building(self, building):
+		self.building.append(building)
+		self.num_buildings += 1
+		self.capacity = building.cap
 
-		def get_info():
-			return "The campus has" + len(buildings) + "with a combined capacity of "
-
-			
+	def get_info(self):
+		print "The campus has " + str(self.num_buildings) + " buildings with a combined capacity of " + str(self.capacity) + "."

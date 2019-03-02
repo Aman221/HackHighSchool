@@ -3,5 +3,5 @@ class Building:
 		self.name = name
 		self.cap = capacity
 
-	def get_info1(self):
-		return 'Building "' + self.name + '" can hold ' + self.cap + ' people.'
+	def get_info(self):
+		print 'Building "' + self.name + '" can hold ' + str(self.cap) + ' people.'
