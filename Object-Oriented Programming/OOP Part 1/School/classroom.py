@@ -15,6 +15,7 @@ class Classroom:
 			self.teacher.greet(s)
 			s.reply(self.teacher)
 
+
 	def class_stats(self):
 		print "The classroom has a standard Capacity of " + str(self.cap) + " and is run by " + self.teacher.name + ". It currently has " + str(len(self.people)) + " students."
 
