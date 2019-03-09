@@ -1,3 +1,4 @@
 from person import Person
 
-class Student(Person)
+class Student(Person):
+	
