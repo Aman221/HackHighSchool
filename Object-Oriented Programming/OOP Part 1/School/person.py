@@ -1,3 +1,3 @@
 class Person:
-	def __init__ (self):
-		self.person = person
+	def __init__ (self, name):
+		self.name = name
