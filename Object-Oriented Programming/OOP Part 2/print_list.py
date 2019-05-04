@@ -2,10 +2,14 @@ from singlyclass import SinglyList
 from nodeclass import Node
 
 
-mylist = SinglyList()
 def print_list(list_head):
-	nodes = Node(3)
-	mylist.add_head(Node(3))
-	print iter(Node(content))	
+	print list_head
 
-print_list(mylist.head)
+	
+head = SinglyList()
+node1 = Node(1)
+head.add_head(node1)
+node2 = Node(2)
+node3 = Node(3)
+
+print_list(head)
