@@ -3,7 +3,10 @@ from nodeclass import Node
 
 
 def print_list(list_head):
-	print list_head
+	while list_head:
+		list_head = list_head.next()
+		print list_head.content()
+
 
 	
 head = SinglyList()
