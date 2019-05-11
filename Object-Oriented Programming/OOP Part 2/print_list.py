@@ -3,16 +3,15 @@ from nodeclass import Node
 
 
 def print_list(list_head):
-	while list_head:
-		list_head = list_head.next()
-		print list_head.content()
+	lst = iter(list_head)
 
+	for x in range(3):
+		print(next(lst))
 
 	
 head = SinglyList()
-node1 = Node(1)
-head.add_head(node1)
-node2 = Node(2)
-node3 = Node(3)
+head.add_head(Node(1))
+head.add_head(Node(2))
 
+head.add_head(Node(3))
 print_list(head)
