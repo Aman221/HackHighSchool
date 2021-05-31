@@ -6,7 +6,7 @@ class SinglyList(object):
 		current = self.head
 		while current:
 			yield current
-			current = current.next
+			current = current.next()
 
 	@property
 	def head(self):
