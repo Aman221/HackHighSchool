@@ -1,7 +1,7 @@
 class Node(object):
 	def __init__(self, content):
 		if content is None:
-			raise ValueError(’Node must have content’)
+			raise ValueError('Node must have content')
 		self.c = content
 		self.n = None
 
